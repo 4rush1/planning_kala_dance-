@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Put your own description here</title>
+    <title>Arushi Planning Site</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
@@ -15,7 +15,7 @@
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <div class="container-fluid header p-3">
-    <h1>Site name</h1>
+    <h1>Kala Dance Planning Site</h1>
 </div>
 <nav class="navbar navbar-expand-lg px-3 py-2 mb-2">
     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -35,13 +35,21 @@
             </li>
         </ul>
     </div>
-
 </nav>
 
 
 <div class="container-lg">
-
     <h2>Brief</h2>
+    <p> I have been asked to design a website for a new Kathak Dance class located in Wellington.
+        The dance class is for high school students and the head teacher, Usha Bhatnagar, has some
+        crucial aims for this website.
+    </p>
+    <h4> before completing this Website I did some UX studies where:</h4>
+    <ul>
+        <li>I looked at the possible students who will be using this sight, and their design
+            expectations when accessing the sign</li>
+        <li> Doing competition analysis to figure out the design, style and features  </li>
+    </ul>
         <hr>
     <h2>Boards and sprints</h2>
         <hr>
@@ -96,39 +104,731 @@
 </div>
 <!-- -->
 <div class="container-lg mb-2">
-    <h2> Relevant Implications Summary</h2>
-    <!-- groovy bootstrap list -->
-    <ol class="list-group list-group-numbered">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <div class="fw-bold">Subheading</div>
-                Content for list item
-            </div>
-            <span class="badge bg-primary rounded-pill">14</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <div class="fw-bold">Subheading</div>
-                Content for list item
-            </div>
-            <span class="badge bg-primary rounded-pill">14</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-            <div class="ms-2 me-auto">
-                <div class="fw-bold">Subheading</div>
-                Content for list item
-            </div>
-            <span class="badge bg-primary rounded-pill">14</span>
-        </li>
-    </ol>
-    <hr>
-</div>
-
-<div class="container-lg">
-<h2>Example code presentations</h2>
-    <p>These do not need to be used extensively but look great in the right place</p>
+    <h1>DATABASE COMPLEX PROCESSES</h1>
+    <br>
+    <br>
+    <h1>Starting Design</h1>
+    <p>This is the initial design for my database, I have added the tables as I have added items to my database.
+        initially there was only the member and news table, but my database has gradually grown. Only authorised
+        users, which are teachers, can add, delete or update news, as well as add and delete people from classes.
+        The news page is a very important way for teachers to update their students about upcoming events and
+        remind them about homework etc. Even the classes page, is extremely important as it allows teachers
+        to organise which students and teachers should be in which class.
+    </p>
+    <a class="link" href="https://app.diagrams.net/#G1kDH13pVKYnpVg7_libT9gVtaB0MkynSv">draw.io db planning doc</a>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/DBdesign.png"></div>
     <!-- pre stands for pre-formatted and will render text as it appears in the htm code -->
     <!-- this means extra line breaks appear hence the code starting with no spacings or line breaks-->
+</div>
+<hr>
+<br>
+<div class="container-lg mb-2">
+    <h1>DB sprint 3</h1>
+    <h3>Aim</h3>
+    <p>My first 'part' of the database section are 2 linked tables: the news and members table.
+        These tables need to be linked through a foreign key so that I can
+        link certain members with the news they post. In this sprint I will
+        then build the news page by connecting it to the database and outputting
+        the news items onto the page. Lastly, I will code so that authorised users
+        can create, update and delete news using a form. Throughout this process,
+        I will test and run. Below we can see the data plans, tests, project backlog
+        and various tests.
+    </p>
+    <h4>Tables</h4>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsMemberTable.png">
+    <div class="row align-items-center">
+       <div class="col-lg-6">
+        <h4>SQL Installer</h4>
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/DBNewsMemberTables.png">
+        </div>
+        <div class="col-lg-6">
+        <h4>Python File test</h4>
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsQueryTest.png">
+        </div>
+    </div>
+    <br>
+     <h4>Project Backlog for news page</h4>
+    <a class="link" href="https://github.com/users/4rush1/projects/5">News Project backlog</a>
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsBacklog.png">
+    <hr>
+    <br>
+    <h4>Initially, I had a 'static' news page, as in, I printed my news onto the page using
+        html and worked out the styling to go along with this. The button did not work and
+        no one could, update, add or delete news.
+    </h4>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/StaticNews.png">
+    <hr>
+    <br>
+    <h4>I then used a select query, which reads from the database and outputs it onto the news page.
+    As you can see in the photo to your right, I changed my styling so that my containers are round</h4>
+    <br>
+    <div class="row align-items-center">
+       <div class="col-lg-6">
+        <h4>Select Query in Server file</h4>
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsSelectQuery.png">
+        </div>
+        <div class="col-lg-6">
+        <h4>Data outputted onto HTML news page using a loop</h4>
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsHTMLStructure.png">
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <h3>Testing</h3>
+            <p>After inserting this code into my server, we can see that when the news page is clicked,
+                it prints the query outputs (row factory objects). I have 2 pieces of news in my database
+                therefore it prints 2 row factory objects. </p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewRowFactory.png">
+        </div>
+        <div class="col-lg-6">
+               <h3>This is how the news items are layed-out on the news page NOW</h3>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsPage.png">
+        </div>
+    </div>
+    <hr>
+    <br>
+    <h3>Now I am creating the form where authorised users can add or update news.
+        As well as coding so that the user can delete the news. Below we can see the plan for this section:</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/News_CUDplan.png">
+    <br>
+    <h3>This is the code for the 'GET' method of the news_cud function</h3>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <p>Here we can see that the every action must have an 'id' and a 'task', we can see from the above diagram
+            the tasks and news_id's associated with each action. After this, we can see the code for deleting news (which
+            is in the 'GET' method). We delete the news using a 'delete' query.</p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsCUDcode1.png">
+            <br>
+            <p>Because deletions only happen in the 'GET' method, we are also able to test this query.
+                When the result is true, the item will delete. We can also see the task in the green text
+                and below this, we can see the row factory objects of the news items remain AFTER we delete.</p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/deletest.png">
+        </div>
+        <div class="col-lg-6">
+            <p>For 'update' (in the 'GET' method), we use a select query to select all the data for the news_id of the item.
+                For 'add', we return the form with an id of 0. An id of 0 is never assigned by the system, therefore, if we
+                assign this id we are able to carry out this action (as an id is required to do so).
+            </p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsCUDcode2.png">
+        </div>
+    </div>
+    <h3>This is the code for the 'POST' method of the news_cud function</h3>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <p>For the 'POST' method, we can see that if we add news, we use an 'insert into' query,
+                which inserts the values we entered in the form into the news table. If we update news,
+                we use an update query which sets new values for the new items, using the news_id of the item.
+            </p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsCUDcode3.png">
+        </div>
+        <div class="col-lg-6">
+            <h4>Here we can see the tests for these queries.</h4>
+            <p>The 'add' test prints the content we've added, below this,
+                we can see the task 'add' in the green text and the row factory objects of all the news items AFTER this item
+                is added.</p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/ADDtest.png">
+            <br>
+            <p>
+                With the 'update' test, we can once again see the updated news printed at the top, the task
+                'update' in the green text, and the row factory objects for all the news items. If the result is true,
+                the news will be update.
+            </p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/updatest.png">
+        </div>
+    </div>
+    <br>
+    <h3>Here is a video test for this section</h3>
+    <video controls>
+            <source src="assets/vids/NewsCUDrecording.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    <h3>Reflection</h3>
+    <p>
+    Loading the tables into the database initially took a while, but this is probably
+    because my laptop is slow. After I refreshed the database, everything ran smoothly.
+    It is very useful to have all the tables and data values on one file, where we can
+    easily change the values, columns or data descriptions. Having a test file is also
+    useful, so that we can test the code before putting it into the flask server file.
+    The initial stages of this sprint encountered hardly any errors. The create, update
+    and delete section also ran fairly smoothly, my query all worked fine when I tested
+    them and when I ran the system.
+    </p>
+    <p>
+        However, I did encounter a few errors in this section
+    which were mainly caused by 'silly' mistakes I made. For example initially, the
+    delete task wasn't working, but this was because I accidently set the id as 0 (which
+    is meant to be for adding), rather than connecting it to the ID of the news item. We can
+    see this error in the test below, where I printed the task and id.
+    </p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsPrintId&Task.png">
+    <br>
+    <p>
+        I also had an issue where, if I changed the title of my news, the subtitle
+        would be altered as well. This was because, I had title in place of subtitle in
+        the values tuple. I then had an issue where my news was printing twice onto
+        the news page, but this was mainly an html loop issue relating to the HTML news
+        page loop. Another issue was: when news was posted or updated, it would have the
+        wrong time (e.g have AM instead of PM, vice versa). To fix this, I just needed to
+        add a modifier 'localtime' in the datetime brackets. Overall, all these issues were
+        fixed. The issue I still haven't been able to fix is the line breaks in the news CUD
+        form. Currently, even if there are line breaks (using || char 10 || ) in the database,
+        it doesn't show up when outputted onto the news page. Similarly, if the user tries to
+        do a line break when adding or updating news, this doesn't show up when the news is pritned on the page.
+    </p>
+    <h3>Loop issue</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsLooprintwicerror.png">
+</div>
+<hr>
+<br>
+<div class="container-lg mb-2">
+    <h1>DB sprint 4</h1>
+    <h3>Aim</h3>
+    <p>To create a new section of the database: classes. Firstly, I will create a classes table, which
+    will contain the title, subtitle and description of our 3 classes. I will create a HTML classes page,
+    which is linked to the database and classes data will be outputted onto the page. Then I will create
+    an association table, registration, which links the member and classes tables through the member_id
+    and class_id. This association table will allow me to insert students into each class. Following this,
+    I will create a registration HTML page, which will output the members of each class. Lastly, authorised
+    users will be able to add and delete members from each class. Member are added using a small form on the
+    registration page. Below we can see a picture of the project backlog and various tests.
+    </p>
+    <br>
+    <h3>Data Tables</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesRegistrationDiagram.png">
+    <br>
+    <h3>Project Backlog</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesBacklog.png">
+    <br>
+    <h3>Overall Classes and Registration plan</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesPlan.png">
+    <br>
+    <h3>Creating Tables</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/CreateClassRegistrationTable.png">
+    <br>
+    <h3>Testing</h3>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <p>This is a test I did within the testing file, where I used a select query to select the class
+                data, and printed the class name</p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesTest1.png">
+        </div>
+        <div class="col-lg-6">
+            <p>I then did a test where I printed all the class info</p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesTest2.png">
+        </div>
+    </div>
+    <br>
+    <h3>I then inserted this query into my server and classes html page as it was successful</h3>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <h3>Python Server</h3>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesServer.png">
+        </div>
+        <div class="col-lg-6">
+            <h3>HTML Classes file</h3>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesHTML.png">
+        </div>
+    </div>
+    <br>
+    <h3>This query was successful as my classes data was outputted correctly onto the classes page</h3>
+    <p>Currently, the register button was not functional, these became functional once
+        I started working on the registration section</p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesDesign.png">
+    <br>
+    <h3>After this I began working on the registration section.
+    </h3>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <p>In photos below we can see a query I did in my test file, where I joined the member and classes
+                tables via the registration table using the member_id and class_id. Then I printed the name
+                of the members in the registration table and the name of the class they are in.
+            </p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/RegistrationTest.png">
+        </div>
+        <div class="col-lg-6">
+            <p>I then tested a query for my select form in the registation page. I initially wanted to print
+                the firstname and age group of the member on the select option, therefore I used a select
+                query to select these columns from the member table. The idea is that these values would
+                be outputted into the select options in the form, which asks you to select members
+            </p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/RegistrationPrintMemberTest.png">
+        </div>
+    </div>
+    <br>
+    <h3>Since these 2 queries were successful, I began implementing this into my server and adding more
+        complex parts to this design, such as queries to add or delete members. When an authorised user
+        clicks on the 'register' button, they arrive at the register page and a 'GET' method is used
+        to request the data needed for this page (which is requested / selected through queries).
+    </h3>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <p>
+                In this first photo, we can see the test query has been implemented into the 'GET' method
+                of the code, this is so that we can request data from the classes, members and registration tables.
+                As mentioned before, this test query links the classes and member table through the association
+                table, registration (suing the member_id and class_id). This query is used to output the members
+                in each class onto that classes' page. Within photo, we can also see the select query used to select
+                all the members. This is done so that these values can be outputted in the select button to add members.
+                We can see that the member_list below this query contains the run_search_query_tuples result.
+            </p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/RegistrationServer1.png">
+        </div>
+        <div class="col-lg-6">
+            <p>
+                In this part, these are the queries for deleting and adding members. In order to delete a member
+                it requires a task, therefore if the task 'delete' is present, then a delete query is used to delete
+                this member. This is done by deleting the member from the registration table, where the member_id matches
+                the member_id of the person we are removing, and the class_id matches the class_id of the class we are
+                deleting from.
+            </p>
+            <br>
+            <p>The 'Add Member' form on the registration page used the method="POST", therefore, no task is needed to
+                add a member, instead we just need to request method="POST". Then we use an 'insert into' query to insert
+                the member into the class. We do this by inserting the member_id (of the member selected) and the class_id
+                (of the class they are registering in) into the registration page.
+            </p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/RegistrationServer2.png">
+        </div>
+    </div>
+    <br>
+    <h3>Finally, this is how it was outputted in the HTML file originally and
+        then after adding 'add member' and 'delete' option:
+    </h3>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <h3>Original output of members in class</h3>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/RegisterPage.png">
+        </div>
+        <div class="col-lg-6">
+            <h3>Registration page now, after creating the 'add member' and 'delete' options</h3>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/RegistrationPage2.png">
+        </div>
+    </div>
+    <br>
+    <h3>Further tests in Server run
+    </h3>
+    <p>This shows the Row Factory objects when we reach the classes page</p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesRowFactory.png">
+    <br>
+    <p>This when we add a member, in the server run file we can see the member_id
+        (known as name_list) and the class_id which is passed into the registration table</p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/AddMemberClassTest.png">
+    <br>
+    <h3>Video Test</h3>
+    <p>Lastly, in the video below we can see a full run test of the classes section. It is important to notice
+        the small orange tabs, which show-up in the bottom-left corner when certain buttons are hovered over (e.g
+        delete). These show the task or ID's for certain buttons (e.g delete button). In this video, it's also
+        important to notice that, due to the unique constraints in the database, you cannot add 1 person to a
+        class more than once. This is extremely important validation, as it means we avoid double ups.
+    </p>
+    <video controls>
+            <source src="assets/vids/ClassesTest.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    <h3>Reflection</h3>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <p>Overall, now that I have practice after the news section, I didn't encounter many issues when creating
+                the tables and inserting values into them. There was a moment when my unique constraint wasn't working,
+                but this was an error from my part where I accidentally inserted "Abhi Banaras Gharana" twice into the
+                registration page. It took a long time to figure out how to execute my ideas, as I had many components
+                to this database which I wanted to execute. For example, writing a query to join tables was initially
+                challenging, but I quickly understood how it works. Outputting the data and deleting members became
+                fairly intuitive as I used similar techniques in the News page, however, the most difficult part was
+                definitely the 'add member' option. Below we can see an unsuccessful test for adding members. This had
+                countless issues. From this test, I understood that I don't need a task for addimg members, as I am
+                directly posting this from a form which uses the 'POST' method. Nothing else in the classes section
+                uses the 'POST' method, therefore I realised I can just use the post method when adding members to
+                the registration table. I also realised that I need the 'GET' method to request the member data
+                using a select query, I do not need it to insert values into the registration table, that comes after
+                posting. Therefore, this initial add_member test actually helped me structure the final registration
+                function which I use now, as I realised how to structure my ideas.
+            </p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/RegistrationAddMemberTestFail.png">
+        </div>
+        <div class="col-lg-6">
+            <p>Lastly, another issue I encountered was with outputting the members into the select options. Initially,
+                my query only selected members IN the specific class rather than ALL the members. This is because I was
+                selecting members in the registration from specific classes. This meant members already in the
+                class were showing up in the select options. We can see an example of the issue below:
+            </p>
+            <br>
+            <h4>Only showing members in class as options</h4>
+            <p>I soon realised that I need to select all members from the MEMBER table. This allowed me to fix my query</p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/SelectBoxTestOnlyClass.png">
+            <br>
+            <p>I also had issues with the loop structure.</p>
+            <h4>Loop Issues</h4>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/TryingSelectMember.png">
+            <br>
+            <h4>Through trial and error, I finally found the correct way to structure my loop</h4>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/CorrectLoop.png">
+        </div>
+    </div>
+    <br>
+    <h1>Sprint 5</h1>
+    <p>In this sprint I am linking the member table to the signup form. Before, the signup form was just
+    'static', meaning that none of the form data was collected or passed to the database. Now, using an
+    'insert into' query, I am inserting the data into the member table. After this I will begin working
+    on the login page, in which will ask for the email and password. Using a search query, I will select
+    the details for the member table where the email = to the email entered in the form. This is an
+    important search query as it checks whether this email is in the member table and therefore, if
+    this person has signed up. Lastly, if the password in the database matched the password entered
+    in the form, we start a session. Lastly, I will create a function which allows user to logout by
+    clearing the session. Below we can see the data plan and project backlog. In this sprint, my reflection
+    is integrated throughout my examples, as I reference what went well (my successful tests) and issues
+    which occured</p>
+    <br>
+    <h3>Data plans</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/SignupLoginPlans.png">
+    <br>
+    <h3>Project Backlog</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/SIGNUPBACKLOG.png">
+    <br>
+    <h4>Testing</h4>
+    <p>Initially, when I was beginning to code my signup page, I coded it completely wrong, using the wrong method
+    and the wrong type of query. As we can see below, I have my query in the 'GET' method, in reality, it should
+    be in the 'POST' method and then I should have an 'insert into' query to insert the form data into the member
+    table once the form has been submitted/posted. I initally wrote this in my test file and I thought it was
+    'correct' because I forgot I was supposed to insert values into the member table instead.</p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/SignupIncorrectTest.png">
+    <br>
+    <p>Once I realised that I should be inserting values INTO the member table and not selecting them from the member
+        table, I began coding the correct query in my server. I should have originally coded this in my test file
+        rather than straight away coding this in my server. If I were to repeat this process, I would make sure to
+        get a successful test before adding it to my server.
+    </p>
+    <br>
+    <p>Before I show you my final code. I found it very hard to work out how to insert the correct authorisation
+        into the member table, based on whether they are a student or a teacher. As you may know, in my signup form
+        you must select whether you are a teacher, senior student or junior student, you can only select 1 option.
+        Teachers are supposed to have an authorisation of 0, and students are supposed to have an authorisation of 1
+        whether they are a senior or junior student. Below are some examples of unsuccessful ways I tried to insert
+        the correct authorisation into the member table.</p>
+    <br>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <p>In this first photo below, I was initally trying to start a session as soon as the person signs up.
+            However, in this test, I tried to set the authorisation in the session to a particular number
+            before I inserted the form data and authorisation into the member page. This didn't work as the system didn't
+            recognise 'age_group' and the authorisation number I set was not being inserted into the table. Overall, this
+            if/else statement didn't work.
+            </p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/SignupAuthorisationTrial.png">
+            <br>
+            <p>In this next test, I got very close to my final code, I realised that the best way to do this is to have
+            a separate 'insert into' query based on whether you are a teacher or student. However, there were still many
+            issues with this code. Firstly, my if/else statement wasn't working because the system didn't recognise f['age_group'].
+            </p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/SignupAuthorisationTrial2.png">
+        </div>
+        <div class="col-lg-6">
+            <h4>age_group issue</h4>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/SignupAuthorisationTrial2Error.png">
+            <p>In my final version I changed this to f['selgrouplist'], this worked as the name of my select group options
+                is 'selgrouplist'. However, after this I still had an error, except this time it was because 'teacher' wasn't
+                recognised. In my form the select option for 'Teacher' has a capital letter at the start, in my code I wrote
+                'teacher' without a capital at the start. This meant that the system wasn't recognising the teacher option in
+                my form and inserting an authorisation of 1 for both students and teachers. I fixed this issue by making the
+                teacher option in my form and database not have a captial letter. This doesn't need further validation because the capital letter in the
+                select option can't be changed by the user. Along with this, you can only select 1 option, therefore users
+                can't enter any other age group or multiple age groups. Therefore, this should work no matter what.
+                Lastly, you can see in both of these tests, I tried to declare a session in the signup page, however,
+                I realised that it is probably better to redirect the user to the login page, where they can login and
+                a session can be started.
+            </p>
+        </div>
+    </div>
+    <br>
+    <h4>Lastly, an issue I only realised recently is that the data which I origionally inserted into my
+        member table had consistency issues. I realised that the data I inserted only had 'student' written,
+        and didn't specify whether they are senior or junior students. Whereas, the users who signup to Kala
+        dance have either senior or junior student in the age_group column. This wasn't causing an issues,
+        but to keep my data consisent I decided to change this. It is very easy to change as all my data is
+        located in one file, which is very convenient
+    </h4>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <h4>Inconsistent data</h4>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/AgeNotCohesive.png">
+        </div>
+        <div class="col-lg-6">
+            <h4>Inconsistency fixed</h4>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/AgeCohesive.png">
+        </div>
+    </div>
+    <br>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <h4>Final version server file</h4>
+            <p>Below you can see a screenshot of the final code for my signup page. With the 'GET' method, we 'retrieve'
+            the signup page. In the 'POST' method, we request the data from the form and begin inserting it into the
+            member table. In my form, I have an option where you can select whether you are a teacher, senior student or
+            junior student. As you saw above, it was very hard to find a way to insert the correct authorisation into the
+            table, but I eventually worked this out using an if else statement. If the select option is 'Teacher', we insert
+            all the form data into the table and an authorisation of 0. Else (if they are a senior or junior student), we
+            insert all the form data with an authorisation of 1. We can see at the bottom of this code, if the result is false we show an error. I used a
+            new convention here, 'flash', which flashes the error at the top of the page and the user can press the 'X'
+            button to get rid of the notification. If the user successfully signs up, they are redirected to the login
+            page to login. </p>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/FinalSignupCode.png">
+        </div>
+        <div class="col-lg-6">
+            <h4>HTML file finale version</h4>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/SignupHTML1.png">
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/SignupHTML2.png">
+        </div>
+    </div>
+    <br>
+    <h3>Sign up successful</h3>
+    <p>We can see in this test below, both the senior and junior students who signed up were assigned an
+    authorisation of 1 and the two teachers were assigned an authorisation of 0 (we can see the authorisation
+    in the last column).</p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/SignupNewMembers.png">
+    <br>
+    <h3>Video Test for Signup</h3>
+    <video controls>
+        <source src="assets/vids/SignupTest.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <h3>Login Section of Sprint 5</h3>
+    <p>Before I started working on the session part of my login, I first tested my select query test if it
+    selected values from the member table WHERE the email is equal to the email which I put in the return
+    render template. This is an email which is already in the member table. This test was successful, but
+    instead of testing this in my test file, I straight-away started coding in my server file. Throughout the
+    login I took tests while coding in my server file, however, in the future it would be better to code this
+    in my test file before implementing it into my server</p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/LoginSelectingValuesTestSuccess.png">
+    <br>
+    <p>For the login section, I created a smaller form, which only asks for the email address and password of
+    the user. We can see from the server file below that I am using a select query, which selects the values from
+    the member table where the email is equal to the one entered in the form. This query is a good way to check if
+    user is in the member table, therefore it checks if they have an account. Then we can see that IF we receive a
+    and IF the password of our result is equal to the password in the login from, we begin a session. The session
+    is a very crucial part of the website, as it means the person can remain logged in. In this session, we set
+    values based on the values we selected from the database using our select query. After this we redirect for the
+    index/homepage, if this "if" statement doesn't work, then an error message "credentials not recognised" prints
+    and the session in NOT started. We can also see that I printed the authorisation values to test whether my session
+    code worked.
+    </p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/FinalLoginCode.png">
+    <br>
+    <p>We can see that when the form was filled in, the session was successfully printing in the server run</p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/LoginSuccess.png">
+    <br>
+    <h3>HTML code for Login page</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/LoginHTML.png">
+    <br>
+    <h3>Login page on Website</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/LoginForm.png">
+    <br>
+    <h3>Here we can see that if the email or password is incorrect, an error message is printed and the session
+        is not started. I tested this for both the email and password being incorrect
+    </h3>
+    <p>Incorrect email</p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/WrongEmail.png">
+    <br>
+    <h3>Once the query was working and the session was created, I created a small banner with the details at
+        the user. This was a test to see if the session worked. Once this worked I got rid of it.
+    </h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/LoginSession.png">
+    <br>
+    <h3>Logout Section for Sprint 5</h3>
+    <p>Lastly, I created a very simple app.route / function to logout the user, all we need to do is clear the
+    session. The next step I took was validating the homepage, news page and classes page. In the pictures below, you can see the code which
+    validates each page.
+    </p>
+    <br>
+    <h3>Validation for Login & Signup button</h3>
+    <p>On the homepage I added validation which meant, if a session has been started (user is logged in), the
+        'signup' and 'login' button is replaced with a logout button which is linked to the logout app.route.</p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/LoginSignupBtnCode.png">
+    <br>
+    <h3>Validation for News Page</h3>
+    <p>On the news page, I added validation so that, if you are logged in (session started) and if you are a teacher
+        (authorisation 0) then you can add or delete news
+    </p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsValidation.png">
+    <br>
+    <h3>Validation for Classes page</h3>
+    <p>I then added validation which meant that, if you are logged in and if you are a teacher, you can access
+        the registration page. Accessing this page means you can see the members and add or delete members of
+        from each class.
+    </p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesValidation.png">
+    <br>
+    <h3>Below you can a video test, this test shows an Authorised user (Teacher) is allowed to create, update and delete
+        news and members from classes. I took the email of this authorised user from my member table.
+    </h3>
+    <video controls>
+        <source src="assets/vids/LoginPart1.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <h3>Below you can a for non-authorised users (students) and for people who aren't logged in. I took the
+        email of the student from my database. In this test, you can see that students and people who aren't
+        logged in, cannot create, update or delete news, nor can they view the members of each class and add or
+        delete them from classes. They can only view the news and classes. In addition to this, this video shows
+        you what happens if the user enters an email which is not in the member table, or if they enter an incorrect
+        password.
+    </h3>
+    <video controls>
+        <source src="assets/vids/LoginPart2.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <p>You saw in these tests that if the user isn't logged in or if they aren't a teacher, then the buttons
+    to add/delete/update news or to register for classes do not show up. Originally, I greyed-out / disbaled
+    the buttons instead. But I decided to get rid of this as it looked ugly.</p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/DisabledButton.png">
+    <br>
+    <h3>Overall Reflection</h3>
+    <p>
+   In conclusion, I have included various tests and evidence which show how my program has gradually
+    developed. Even though it was challenging at times, I managed to fix all the issues which occurred in
+    my sprints and did a final video test run to show the functionality of program at the the end of each
+    sprint. Throughout my program, I have included error messages, such as: for news I have an error page
+    which reads "do not know what to do with create, read, update on news (key not present)", similarly with
+    the signup and login, error messages are printed if credentials are not recognised. For the signup page,
+    I also printed a flash error which tell the user if they already have an account. We can see a picture
+    below.
+    </p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/AlreadyAccount.png">
+    <br>
+    <p>One thing which I was not able to include was an option for the user to edit their details once they
+    sign up. In my current design, the user fills the form and once they submit the form, their details are
+    inserted into the member table straight away. They are not given the option to confirm, edit or delete
+    their account / details. In the future, I would definitely implement this in my design, as it gives the
+    user the option to edit their details, which Is very important. In this database, I created a glossary
+    table which is outputted onto a glossary page, this data doesn't need to be connected to any other table.
+    However, if I had the time too develop this database further, I would connect every Hindi/Sanskrit word in
+    the wesbite to the glossary page so that people can click on the word and it takes them to the glossary page.
+    Perhaps, I could even connect this table to the news page, where every Hindi word in the News page is connected
+    to this tables. On my glossary page, I would also add a better layout to make the pronunciation more readable.
+    </p>
+    <br>
+    <h1>Describing and Addressing Relevant Implications:</h1>
+    <ul>
+        <li><b>Privacy:</b></li>
+        <p>Decribe: To ensure we are following the relevant implication of privacy,
+            we must ensure we have kept personal data safe. We should make sure that only
+            authorised users should be able to access certain personal data. The data shouldn’t be
+            easily and directly accessible by the user, we can test this by seeing if http://127.0.0.1:8000/data
+            takes us to the data folder. In addition to this, it is standard for passwords to be ‘hashed’,
+            meaning that the password is converted into a series of letters and numbers using an encryption algorithm.
+            Lastly, we shouldn’t collect unnecessary data from the user
+        </p>
+        <br>
+        <p>Address: While constructing our database and integrating it into the website, I didn’t address privacy as
+            much as a professional web developer would. For example, I do not have an encryption algorithm to hash
+            password, in the future, I would include this to further increase the privacy of my database. However,
+            we had some forms of data protection. For example, the data was not directly accessible via the
+            http://127.0.0.1:8000/data link, and instead, an error page was given. I don’t collect too much
+            personal information from the user, other than their name, I ask for their email and whether
+            they are a student or teacher. Asking whether they are a student or teacher is purely to increase
+            the privacy of this database by making teachers authorised users. In my database, on the registration
+            pages for each class, the students and teachers in the class are displayed. In order to view the
+            class members, you must be an authorised member, which is a teacher. This is good because it means
+            that not all users can view who is in each class. However, one issue is that anyone can sign-up and
+            become a teacher. If this was a real dance class, I would put extra measures in place that require the
+            teacher to provide some form of identification that they are a dance teacher from this school  </p>
+        </p>
+        <br>
+        <li><b>Functionality:</b></li>
+        <p>Describe: For a database to be functional, there shouldn’t be any glitches, all queries should
+            work correctly and all the buttons to carry out those queries should also work. The database
+            should have also been tested regularly while we were coding. There shouldn’t be any errors
+            when carrying out queries and the data in each column should be consistent. Foreign Keys must
+            also be associated correctly. E.g the correct member must be associated with the class their
+            in, or with the news they’ve posted. We must address Functionality through accurate entity
+            relationship diagrams, creating an SQL installer file so that it's easy to make small changes
+            and corrections in the database and extensive testing of the database queries and how they
+            are outputted onto our web pages.</p>
+        <br>
+        <p>Address: Throughout this process, I tested my database consistently and comprehensively. I ran many
+            tests for my queries in the testing file and within my server. I also viewed my tables to check that
+            the data is consistent, e.g. the date being in the SQLite data format: "YYYY-MM-DD HH:MM:00". When
+            checking the consistency of my data, I noticed one issue: the students I inserted into the database
+            only had the word ‘student’ in their age group. Whereas, those who signed up through the form had
+            ‘senior student’ or ‘junior student’ in their age group. Because all my data is in my SQL installer
+            file, I easily fixed this inconsistency, by changing all the students in the member table to either
+            ‘senior student’ or ‘junior student’; without facing any other problems. This SQL installer file has
+            given me the confidence to alter my data and rebuild my database throughout this process, allowing
+            me to refine my database design. Pieces of data such as my member name or member email only appear
+            once in my database. Most importantly, I have made member emails unique because these are necessary
+            to distinguish between members in the table. Two members could have the same name despite being two
+            different people (e.g John Bradon), having the email unique means we can still distinguish between
+            them. I have also made as many data fields as I can unique and not null, this means that the database
+            is ‘self-validated’, as it is able to spot when a unique constraint is failed (e.g repeated entries),
+            or missed fields. If I require items from my member table in other parts of the database (e.g a member
+            name posted with a news item), I link them through foreign keys.</p>
+        <br>
+        <li><b>Sustainability and Future Proofing:</b></li>
+        <p>Describe: Sustainability and Future-proofing means the database should be able to be updated and
+            extended, and we should be able to add new features. The database should be coded in such a way
+            that it can be handed over to another developer who can understand it easily, and develop it
+            further. We should have different tables for different entities. In addition to this, we should
+            be able to add more data to existing tables, change values, change data descriptions and link
+            in new tables without needing to change any pre-existing tables. We can do this by using foreign
+            keys, which means that any updates to the data, such as the member name, only need to be changed
+            in the member table once. It is then changed in all the linked tables (through the foreign key),
+            and the values would automatically update if it’s used in any queries.</p>
+        <br>
+        <p>Address: In my database, I had a different table for members, news, classes and registration. This
+            allowed me to link various tables together through foreign keys, for example, the member and news
+            tables were linked through a foreign key and the member and classes table were linked through an
+            association table, registration. This also meant that any changes I made to the data values in my
+            table, were automatically changed in the other tables. We saw an example of this when I changed
+            ‘student’ in my member table to ‘junior student’ or ‘senior student’. Due to the SQL installer
+            file, I can also confidently add new tables and link these to existing tables.
+        </p>
+        <br>
+        <li><b>End-user considerations:</b></li>
+        <p>Describe: This means that the data needs to be queried and outputted in a way that caters to the
+            user's needs; for example, we could make sure that it appeals to the right demographic. It should
+            be presented so that it ‘matches the real world’ in terms of the user’s expectations for a modern
+            website. We can do this by presenting data in a clear organised structure. Along with this, forms
+            should allow the users to add entries and update or delete existing entries in the database.</p>
+        <br>
+        <p>Address: In my database design, end-user considerations are evident in the news and registration page.
+            On the news page, users can add new entries and delete or update existing news. Even with the registration
+            section, users can add members to a class and also have the ability to delete these members. The only thing
+            I didn’t consider was the signup page, in this page I allow the users to submit the form to signup to the
+            website, however, I do not give them the option to confirm their details or edit their details. Before
+            implementing my database into the signup page, I had a confirm page. I still have this confirm page in my
+            templates, but it is not connected to the database. This is something. If I were to repeat this process,
+            I would have given the user the option to edit their details, and THEN their details are added to the
+            member page.</p>
+        <br>
+        <p>In terms of the News, Classes and Registration page, all the data information is managed through a
+            website. My news and class data are presented in an accessible way as its design matches between
+            ‘the real world’ and modern websites, making it easy for users to understand what to do on each
+            page. E.g that to add news they need to fill a form or that they need to go to the registration
+            page to add or delete members. On my news page, as soon as the change has been made (in the
+            news_cud form), it redirects to the news page, where we can see immediate confirmation that our
+            action has occurred. The same applies for registration, where the user can immediately see if they
+            have added or deleted a user, as both these actions occur on the registration page and we are
+            redirected towards the registration page once the change has occurred. For my signup and login form,
+            the user receives an error message that clearly communicates the reason why the action has failed,
+            e.g. credentials not recognised.</p>
+        <br>
+        <p>One way I address end-user considerations is by considering my stakeholders. Throughout my website,
+            my data (such as news, classes, etc.) has been considerate of Indian culture, by using the correct
+            words used in Kathak dance, such as Gharana, Tukda, Tatkaar, etc.. I have also considered the
+            non-Indian population or those who don't understand Hindi terms and dance terms by implementing a
+            glossary. This glossary is in my database and allows those who don't understand certain terms to
+            learn the meaning and pronunciation. </p>
+        <br>
+    </ul>
+
+</div>
+
+
+<br>
 <h3>Some SQL</h3>
 <pre style="font-size: 1em;"><code class="SQL">SELECT track_name as "Tracks",
 album_name as "Album", album_artist as "Artist" --Interesting comment
@@ -179,6 +879,7 @@ font-size: 100%;
     }
 }</code>
 </pre>
-</div>
+
 
 <footer> Your name </footer>
+</html>
