@@ -117,8 +117,11 @@
     </p>
     <a class="link" href="https://app.diagrams.net/#G1kDH13pVKYnpVg7_libT9gVtaB0MkynSv">draw.io db planning doc</a>
     <img class="img-fluid mx-auto d-block my-2" src="assets/images/DBdesign.png"></div>
-    <!-- pre stands for pre-formatted and will render text as it appears in the htm code -->
-    <!-- this means extra line breaks appear hence the code starting with no spacings or line breaks-->
+    <br>
+    <h3>This is the link for my main project backlog, it has too many items on it and all of them cant fit in a
+    photo, therefore look at this link!</h3>
+    <a class="link" href="https://github.com/users/4rush1/projects/8">Main project Backlog Link</a>
+
 </div>
 <hr>
 <br>
@@ -241,7 +244,7 @@
     <br>
     <h3>Here is a video test for this section</h3>
     <video controls>
-            <source src="assets/vids/NewsCUDrecording.mov" type="video/mp4">
+            <source src="assets/vids/NewsCUDrecording.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
@@ -299,6 +302,7 @@
     <h3>Data Tables</h3>
     <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesRegistrationDiagram.png">
     <br>
+      <a class="link" href="https://github.com/users/4rush1/projects/7">Project Backlog Link</a>
     <h3>Project Backlog</h3>
     <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesBacklog.png">
     <br>
@@ -422,10 +426,13 @@
         the small orange tabs, which show-up in the bottom-left corner when certain buttons are hovered over (e.g
         delete). These show the task or ID's for certain buttons (e.g delete button). In this video, it's also
         important to notice that, due to the unique constraints in the database, you cannot add 1 person to a
-        class more than once. This is extremely important validation, as it means we avoid double ups.
+        class more than once. This is extremely important validation as it means we avoid double ups, however,
+        it would have been beneficial if I had a notification pop up which told the user that 'this person is
+        already in the class'. This would have enhanced the end-user considerations relevant implication and
+        would be something I would improve in the future.
     </p>
     <video controls>
-            <source src="assets/vids/ClassesTest.mov" type="video/mp4">
+            <source src="assets/vids/ClassesTest.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     <h3>Reflection</h3>
@@ -485,6 +492,7 @@
     <h3>Data plans</h3>
     <img class="img-fluid mx-auto d-block my-2" src="assets/images/SignupLoginPlans.png">
     <br>
+    <a class="link" href="https://github.com/users/4rush1/projects/4">Project Backlog Link</a>
     <h3>Project Backlog</h3>
     <img class="img-fluid mx-auto d-block my-2" src="assets/images/SIGNUPBACKLOG.png">
     <br>
@@ -591,7 +599,7 @@
     <br>
     <h3>Video Test for Signup</h3>
     <video controls>
-        <source src="assets/vids/SignupTest.mov" type="video/mp4">
+        <source src="assets/vids/SignupTest.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <br>
@@ -629,10 +637,9 @@
     <h3>Here we can see that if the email or password is incorrect, an error message is printed and the session
         is not started. I tested this for both the email and password being incorrect
     </h3>
-    <p>Incorrect email</p>
     <img class="img-fluid mx-auto d-block my-2" src="assets/images/WrongEmail.png">
     <br>
-    <h3>Once the query was working and the session was created, I created a small banner with the details at
+    <h3>Once the query was working and the session was created, I created a small banner with the details of
         the user. This was a test to see if the session worked. Once this worked I got rid of it.
     </h3>
     <img class="img-fluid mx-auto d-block my-2" src="assets/images/LoginSession.png">
@@ -645,7 +652,11 @@
     <br>
     <h3>Validation for Login & Signup button</h3>
     <p>On the homepage I added validation which meant, if a session has been started (user is logged in), the
-        'signup' and 'login' button is replaced with a logout button which is linked to the logout app.route.</p>
+        'signup' and 'login' button is replaced with a logout button which is linked to the logout app.route.
+        A member_id session is also required, this is because the Flash notification 'creates its own session',
+        but without a member id. Without requiring the member_id, it causes the logout button to show up even if
+        the user isn't signed in. Therefore, we require the member id.
+    </p>
     <img class="img-fluid mx-auto d-block my-2" src="assets/images/LoginSignupBtnCode.png">
     <br>
     <h3>Validation for News Page</h3>
@@ -665,7 +676,7 @@
         news and members from classes. I took the email of this authorised user from my member table.
     </h3>
     <video controls>
-        <source src="assets/vids/LoginPart1.mov" type="video/mp4">
+        <source src="assets/vids/LoginPart1.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <br>
@@ -677,7 +688,7 @@
         password.
     </h3>
     <video controls>
-        <source src="assets/vids/LoginPart2.mov" type="video/mp4">
+        <source src="assets/vids/LoginPart2.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <br>
@@ -690,25 +701,21 @@
     <p>
    In conclusion, I have included various tests and evidence which show how my program has gradually
     developed. Even though it was challenging at times, I managed to fix all the issues which occurred in
-    my sprints and did a final video test run to show the functionality of program at the the end of each
+    my sprints and did a final video test run to show the functionality of program at the end of each
     sprint. Throughout my program, I have included error messages, such as: for news I have an error page
     which reads "do not know what to do with create, read, update on news (key not present)", similarly with
-    the signup and login, error messages are printed if credentials are not recognised. For the signup page,
-    I also printed a flash error which tell the user if they already have an account. We can see a picture
-    below.
-    </p>
-    <img class="img-fluid mx-auto d-block my-2" src="assets/images/AlreadyAccount.png">
-    <br>
-    <p>One thing which I was not able to include was an option for the user to edit their details once they
-    sign up. In my current design, the user fills the form and once they submit the form, their details are
-    inserted into the member table straight away. They are not given the option to confirm, edit or delete
-    their account / details. In the future, I would definitely implement this in my design, as it gives the
-    user the option to edit their details, which Is very important. In this database, I created a glossary
-    table which is outputted onto a glossary page, this data doesn't need to be connected to any other table.
-    However, if I had the time too develop this database further, I would connect every Hindi/Sanskrit word in
-    the wesbite to the glossary page so that people can click on the word and it takes them to the glossary page.
-    Perhaps, I could even connect this table to the news page, where every Hindi word in the News page is connected
-    to this tables. On my glossary page, I would also add a better layout to make the pronunciation more readable.
+    the login, an error message is printed if credentials are not recognised. For the signup page,
+    I also printed a flash error which tell the user if they already have an account. One thing which I was
+    not able to include was an option for the user to edit their details once they sign up. In my current design,
+    the user fills the form and once they submit the form, their details are inserted into the member table
+    straight away. They are not given the option to confirm, edit or delete their account / details. In the
+    future, I would definitely implement this in my design, as it gives the user the option to edit their details,
+    which Is very important. In this database, I created a glossary table which is outputted onto a glossary page,
+    this data doesn't need to be connected to any other table. However, if I had the time to develop this database
+    further, I would connect every Hindi/Sanskrit word in the website to the glossary page so that people can click
+    on the word and it takes them to the glossary page. Perhaps, I could even connect this table to the news page,
+    where every Hindi word in the News page is connected to this tables. On my glossary page, I would also add a
+    better layout to make the pronunciation more readable.
     </p>
     <br>
     <h1>Describing and Addressing Relevant Implications:</h1>
@@ -814,7 +821,10 @@
             have added or deleted a user, as both these actions occur on the registration page and we are
             redirected towards the registration page once the change has occurred. For my signup and login form,
             the user receives an error message that clearly communicates the reason why the action has failed,
-            e.g. credentials not recognised.</p>
+            e.g. credentials not recognised for the login page, and 'looks like you already have an account' for
+            the signup page. For my classes page, I do not have an error message / notification for when the
+            user tries to add a member who is already in the class. In the future, I would add a message "This
+            person is already in the class", so I that I improve the visibility of system status. </p>
         <br>
         <p>One way I address end-user considerations is by considering my stakeholders. Throughout my website,
             my data (such as news, classes, etc.) has been considerate of Indian culture, by using the correct
