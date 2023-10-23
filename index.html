@@ -40,74 +40,269 @@
 
 <div class="container-lg">
     <h2>Brief</h2>
-    <p> I have been asked to design a website for a new Kathak Dance class located in Wellington.
-        The dance class is for high school students and the head teacher, Usha Bhatnagar, has some
-        crucial aims for this website.
+    <p>My client, Usha Bhatnagar, is an Indian Kathak dance teacher in Wellington.
+        She wanted me to created website for the students and teachers of her dance
+        class, Kala dance. Currently, she communicates with all of her students
+        through emails, this is very challenging because there are three dances class,
+        and each dance class has a various number of students. All of this becomes
+        very challenging for her and she is unable to keep every student ‘in the loop’
+        about what is going on. Therefore, in my website she wanted me to include a
+        news page, where she can add/delete and update news. Along with this,
+        she currently organises the members of her classes (students and teachers
+        in each class) using a spreadsheet. This has become a very tedious process
+        for her as she has to go through each spreadsheet to add or delete
+        members from classes. For this reason, she also asked me to create a classes
+        page, where she can select students and add them to a class. Lastly, many
+        people interested in joining the dance school are often hesitant as they
+        do not know what the dance class entails. This is why Usha instructed me
+        to include relevant historical information about the dance form, some
+        initial info about classes and information about the head teacher.
     </p>
+    <h4>here is the link for my main Kala Dance project repository</h4>
+    <a class="link" href="https://github.com/4rush1/KalaDanceProject">KALA DANCE REPOSITORY</a>
+    <br>
+    <h4>here is the link for my main my site</h4>
+    <a class="link" href="https://aruush1.pythonanywhere.com/">KALA DANCE WEBSITE</a>
+<br>
     <h4> before completing this Website I did some UX studies where:</h4>
     <ul>
-        <li>I looked at the possible students who will be using this sight, and their design
-            expectations when accessing the sign</li>
-        <li> Doing competition analysis to figure out the design, style and features  </li>
+        <li>I looked at user personas where I asked future users
+            about their frustration with the dance class, what
+            they want from this dance website and their design expectations</li>
+        <li>I did competition analysis and site inspiration to decide my design and features</li>
     </ul>
+    <h2>Link to User Experience Planning</h2>
+    <a href="assets/UX_Design_Planning.pdf">
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/UXSlide.png" alt="Planning face">
+    </a>
+    <br>
+    <h4>Main Project Backlog</h4>
+    <p>This is my main project backlog, it is an overview plan of everything I need to do, including future
+    aspirations (which may not be visible in the screenshot). I have a lot of content on this board, therefore
+    not all of it is visible. </p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/Mainplanning.png">
         <hr>
-    <h2>Boards and sprints</h2>
+    <h3>Front-end development (low fidelity sketches)</h3>
+     <img class="img-fluid mx-auto d-block my-2" src="assets/images/Mainplanning.png">
         <hr>
-        <!-- Heading levels -->
-            <h3>Sprint One</h3>
-            <p>Plan</p>
-            <p>Boards</p>
-            <p>Link to the Canvas Page</p>
-            <p>Test</p>
-            <p>Reflect</p>
-        <hr>
-            <h3>Sprint Two</h3>
-            <p>Plan</p>
-            <p>Boards</p>
-            <p>Link to the Canvas Page</p>
-            <p>Test</p>
-            <p>Reflect</p>
-        <hr>
-    <h3>Images (landscape fits better than portrait)</h3>
-    <!-- one image -->
-    <div class="row mb-2">
-        <div class="col-md-12 my-2">
-            <img class="img-fluid mx-auto d-block my-2" src="assets/images/place_holder.png"> </div>
+            <h2>Sprint One</h2>
+            <h4>Aim</h4>
+            <p>to create a functioning homepage. I need to decide on the styles and layout which I want.
+            On this page my client asked me to include information about the head teacher (Usha) and
+            historical information about the dance.
+            </p>
+            <br>
+            <h4>Board</h4>
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/Sprint1.png">
+            <br>
+            <h4>Feedback</h4>
+            <p>When I first began making my homepage, I chose the colour purple as this is my
+            client (Usha's) favourite colour, however, when I showed this page to Usha she didn't
+            like the colour I chose as it doesn't have much cultural significance. Red is considered
+            an auspicious colour in India, and gold is incorporated in many textiles and in jewelry.
+            Therefore, I decided for my banner to have gold and maroon in it, and the website to incorporate
+            maroon and beige. In addition to this, Usha gave feedback that some of the historical information
+            on this page was incorrect. I made sure to do more thorough research and correct my errors. </p>
+            <h4>Reflect</h4>
+            <p>As you can see from my low-fidelity plans, I really wanted my homepage to include "image buttons".
+                Initially, I chose for these images to be square/rectangular, but later decided that round images
+                would look more aesthetic. I found it extremely hard to code this, as I had square images and
+                didn't know how to make them round. I also didn't know how "combine" the button and the image.
+                After some research, I found out that I need to put the code for the image INSIDE the button 'a'
+                tag. To make the image round I had to use the bootstrap 'rounded-circle' class. To make the button
+                round I made a class btn-round and used 'border-radius'. I was able to make my images round and
+                my buttons round, however, there are some design flaws, as the button is triggered when we hover
+                near the image (as well as when we hover on the image). I fixed this by In this sprint, I trialed various styles
+                (such as the purple background colour, which I changed to beige). Once I finally chose the main
+                colour scheme for my website I was able to add CSS ':root' for these and make minor changes in the
+                shade of these colours. Creating set colours in the :root area is extremely helpful as we don't
+                have to tediously write the red, blue, green ratios for each element in the stylesheet. Instead,
+                we can write 'var(--beige)' etc. In this sprint I also explored flask for the first time by setting
+                up a layout page. Flask allows me to repeat the basic layout/structure from the 'layout' page on
+                all my other page, therefore I was able to create the basic structure for all my pages in the first
+                sprint, this includes the navigation bar, banner and footer. The layout page is linked to the stylesheet,
+                therefore I was able to style the navigation bar etc. Lastly, you can see that the circular image
+                buttons contain digital illustrations of dancers. This is because I struggles to find images for these
+                buttons; therefore I had to create illustrations.
+            </p>
+    <h4>Images to show before and after layout of first page</h4>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/OldLayout.png">
         </div>
-    <!-- two images -->
-    <div class="row">
-        <div class="col-md-6 my-2">
-           <img class="img-fluid mx-auto d-block" src="assets/images/place_holder_sm.jpg">
-        </div>
-        <div class="col-md-6 my-2">
-            <img class="img-fluid mx-auto d-block" src="assets/images/place_holder_sm.jpg">
+        <div class="col-lg-6">
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/homepage.png">
         </div>
     </div>
-        <hr>
 
-    <h3>Video Test Example</h3>
-        <video controls>
-            <source src="assets/vids/littleTest.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p>
-            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-            molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-            vero eros et accumsan et iusto odio dignissim qui blandit praesent
-            luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </p>
+        <h4>:root colours css</h4>
+        <pre style="font-size: 1em;">
+            <code class="css">
+                /* Root section to add background colour etc. */
+                :root{
+                    --beige: rgb(233, 198, 165);
+                    --almond: rgb(255, 241, 225);
+                    --light-beige: rgb(245, 220, 197);
+                    --maroon: rgb(55, 17, 18);
+                    --light-maroon: rgb(100, 6, 17);
+                }
+            </code>
+        </pre>
         <hr>
+        <h4>styling for navigation</h4>
+        <pre style="font-size: 1em;">
+            <code class="css">
+                /* NAVIGATION */
+            .navbar{
+                background-color: var(--maroon);
+                border-bottom: 1px solid black;
+                }
+
+            .nav-item:hover{
+                background-color: var(--light-maroon);
+                }
+
+            .nav-link{
+                text-align: center;
+                font-size: 1.5em;
+                color: var(--beige);
+                }
+
+            .nav-link:hover{
+                color: var(--light-beige);
+                }
+
+            nav .btn-outline{
+                display: inline-block;
+            }
+
+            .material-icons{
+                color: var(--beige);
+                padding: 0.25em 0.2em;
+            }
+            </code>
+        </pre>
+        <hr>
+    <h4>Here is an example of the HTML code for one of the circular Buttons</h4>
+    <p>As you can see, the image is inside the 'a' tag</p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/CircleButton.png">
+
+    <h4>Lastly, here is an example of the CSS for the circular buttons</h4>
+    <pre style="font-size: 1em;">
+        <code class="css">
+            /* -- circular images ---*/
+            .rounded-circle:hover, .circular-overlay:hover ~.rounded-circle {
+            border:15px solid var(--almond);
+            }
+
+            .rounded-circle{
+                border:15px solid var(--beige);
+            }
+
+            .circular-overlay{
+                position:absolute;
+                left:50%;
+                top:54%;
+                width:100%;
+                transform:translate(-50%,-50%);
+
+            }
+            .circular-overlay p{
+                padding: 0.7em 0.5em;
+                color: var(--beige) !important;
+                font-size: 1.2em !important;
+                font-weight: 500 !important;
+                text-align: center;
+            }
+
+            .btntext{
+                text-align: center;
+                font-size: 2em;
+                font-weight: 600;
+                margin: 0;
+            }
+        </code>
+    </pre>
 </div>
-<!-- -->
+
+<h2>Sprint 2</h2>
+<h4>Aim</h4>
+<p>
+    In this sprint my aim was to create the information page which has all the important information about the
+    dance class.
+</p>
+<br>
+<h4>Board</h4>
+<img class="img-fluid mx-auto d-block my-2" src="assets/images/Sprint2.png">
+<br>
+<h4>Feedback</h4>
+<p>In this sprint, my client later got the idea for me to include a gallery with Hastak (hand gestures).
+Initially, I put the names and meanings of the hastak in a collapse button below. But I got feedback from
+one of my stakeholders (Isha) that this makes the page overwhelming as it is hard to know which name/meaning is
+associated with which Hastak. Isha is dyslexic, therefore, I made sure to implement her feedback so that the
+website is easily accessible by her. This influenced me to include the name and meaning of each hastak as captions.
+After this, I got feedback from Usha that some of the names and meaning I included for my Hastak were
+incorrect, therefore, I did more research and corrected this. In addition to this, Usha wanted the gallery
+to stand-out, therefore I chose to put a maroon background behind the gallery, which contrasts the usual
+beige background. Along with this, part way through the project Usha wanted to include a glossary in this
+wesbite. I put this glossary in the info page (as a collapse button), but I got feedback from Isha, that
+this makes the page too overwhelming. Therefore, I decided to create a separate glossary page.</p>
+<h4>Reflect</h4>
+<p>
+    On this page I struggled to find content. When I first created this page, I only had information about the equipment needed
+    and the curriculum of junior and senior classes. This obviously wasn't enough information about the classes and made the
+    page feel very 'empty'. After doing extra research about the dance class, I was able to include information about the timings
+    for classes and the price for junior and senior students. Initially, I found coding the carousel quite hard, as I had many images
+    and I needed to make sure each image had a arrow button to take it to the next image. When I first made this gallery, it didn't work
+    as I made a mistake with the button area (below), and put the same number for the data-bs-slide-to area. Once I fixed this the carousel
+    worked fine and I even incorporated a carousel in curriculum area (where I show two groups of students). As a dance student myself, my
+    client wanted me to include videos of basic dance moves, however, due to time constraints I couldn't complete this. This meant I didn't
+    fully complete the end-user requirements. In the future, I would improve my organisation skills and dedicate more time to creating videos.
+    As you saw from above, I also made many changes in response to feedback.
+</p>
+<div class="row align-items-center">
+    <div class="col-lg-6">
+        <h4>Here is an image of the final outcome of the Info page</h4>
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/Information.jpg">
+    </div>
+    <div class="col-lg-6">
+        <h4>Here is the code for the carousel buttons</h4>
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/carouselbtn.png">
+        <br>
+        <h4>And this is the code for the carousel images</h4>
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/carousel.png">
+    </div>
+</div>
+<br>
+<h3>Banner reflection</h3>
+<p>Part-way through the project my client told me she didn't like the banners as they were repetitive and boring. This inspired me to incorporate the
+illustrations I made of people dancing in my banner. Therefore, you can see below the original banner and the banner after I incorporated illustrations.
+Once I made these banners, the trickiest part was overlaying the text. For these new banners I couldn't overlay the text in the middle, as these banners
+were asymmetrical and the illustration would have been covered by the text. Therefore, I had to create a new banner element in my layout called 'small banner',
+which had a 'small-header' and a 'small-header-quote'. These headers had separate styling from the main banner heading, therefore, I was able to translate the
+text so that it aligns to the right. In the first page, I included a Hindi quote on my banner, on the other pages I decided to use the quote area as a subheading,
+where I tell describe what this page is for. </p>
+<br>
+<h4>Here you can see a comparison between the initial banner for pages and final banner. The homepage banner remianed the same throughout, once minor change
+was adding a quote next to the header on the banner. The signup, login, add news and registration page banners remained the same. The only difference is that
+they are slightly smaller.</h4>
+<div class="row align-items-center">
+    <div class="col-lg-6">
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/OldInfoBanner.png">
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/OldNewsBanner.png">
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/OldClassBanner.png">
+    </div>
+    <div class="col-lg-6">
+         <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewInfoBanner.png">
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewNewsBanner.png">
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewClassesBanner.png">
+    </div>
+</div>
+
+<hr>
 <div class="container-lg mb-2">
     <h1>DATABASE COMPLEX PROCESSES</h1>
     <br>
-    <h3>here is the link for my main Kala Dance project repository</h3>
-    <a class="link" href="https://github.com/4rush1/KalaDanceProject">KALA DANCE REPOSITORY</a>
     <h1>Starting Design</h1>
     <p>This is the initial design for my database, I have added the tables as I have added items to my database.
         initially there was only the member and news table, but my database has gradually grown. Only authorised
@@ -117,7 +312,8 @@
         to organise which students and teachers should be in which class.
     </p>
     <a class="link" href="https://app.diagrams.net/#G1kDH13pVKYnpVg7_libT9gVtaB0MkynSv">draw.io db planning doc</a>
-    <img class="img-fluid mx-auto d-block my-2" src="assets/images/DBdesign.png"></div>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/DBdesign.png">
+</div>
     <br>
     <h3>This is the link for my main project backlog, it has too many items on it and all of them cant fit in a
     photo, therefore look at this link!</h3>
@@ -156,15 +352,17 @@
         <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsBacklog.png">
     <hr>
     <br>
-    <h4>Initially, I had a 'static' news page, as in, I printed my news onto the page using
+    <h4>Original News Layout</h4>
+    <p>Initially, I had a 'static' news page, as in, I printed my news onto the page using
         html and worked out the styling to go along with this. The button did not work and
         no one could, update, add or delete news.
-    </h4>
+    </p>
     <img class="img-fluid mx-auto d-block my-2" src="assets/images/StaticNews.png">
     <hr>
     <br>
-    <h4>I then used a select query, which reads from the database and outputs it onto the news page.
-    As you can see in the photo to your right, I changed my styling so that my containers are round</h4>
+    <h4>Outputting Data</h4>
+    <p>I then used a select query, which reads from the database and outputs it onto the news page.
+    As you can see in the photo to your right, I changed my styling so that my containers are round</p>
     <br>
     <div class="row align-items-center">
        <div class="col-lg-6">
@@ -218,6 +416,7 @@
             <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsCUDcode2.png">
         </div>
     </div>
+    <br>
     <h3>This is the code for the 'POST' method of the news_cud function</h3>
     <div class="row align-items-center">
         <div class="col-lg-6">
@@ -242,8 +441,13 @@
             <img class="img-fluid mx-auto d-block my-2" src="assets/images/updatest.png">
         </div>
     </div>
+    <h4>Here is the final outcome of my news page</h4>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/News.jpg">
     <br>
-    <h3>Here is a video test for this section</h3>
+    <h3>Video Test</h3>
+    <p>Here is a video test for this section, this video was taken when the OLD news banner was in use. At this stage, my news page
+    didn't have validation to prevent students from adding news. Instead, both authorised and unauthorised users could add news. I added
+    this validation later on. </p>
     <video controls>
             <source src="assets/vids/NewsCUDrecording.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -258,12 +462,19 @@
     useful, so that we can test the code before putting it into the flask server file.
     The initial stages of this sprint encountered hardly any errors. The create, update
     and delete section also ran fairly smoothly, my query all worked fine when I tested
-    them and when I ran the system.
+    them and when I ran the system. Later on in my development process, I also added a
+    flash error, which tell the user if they tried to add news which already exists.
+    Because of SQL databases built-in validaton (from unique constraints), users can't
+    add news which already exists, however, my flash error tell them this. In my video
+    test, this flash error was not there as I filmed the test before I implemented this.
+    We can see an image of the flash error below.
     </p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsFlashError.png">
+    <br>
     <p>
-        However, I did encounter a few errors in this section
+        In this sprint, I did encounter a few errors
     which were mainly caused by 'silly' mistakes I made. For example initially, the
-    delete task wasn't working, but this was because I accidently set the id as 0 (which
+    delete task wasn't working, but this was because I accidentally set the id as 0 (which
     is meant to be for adding), rather than connecting it to the ID of the news item. We can
     see this error in the test below, where I printed the task and id.
     </p>
@@ -342,9 +553,12 @@
     <p>Currently, the register button was not functional, these became functional once
         I started working on the registration section</p>
     <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesDesign.png">
+    <h3>New layout of news page</h3>
+    <p>I got feedback from a key stakeholder (Adia) that I did not have enough images on the classes page; therefore, my page was looking
+    boring. I didn't have any images to include, therefore had to create illustrations.</p>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/classes.jpg">
     <br>
-    <h3>After this I began working on the registration section.
-    </h3>
+    <h3>After this I began working on the registration section.</h3>
     <div class="row align-items-center">
         <div class="col-lg-6">
             <p>In photos below we can see a query I did in my test file, where I joined the member and classes
@@ -427,27 +641,27 @@
         the small orange tabs, which show-up in the bottom-left corner when certain buttons are hovered over (e.g
         delete). These show the task or ID's for certain buttons (e.g delete button). In this video, it's also
         important to notice that, due to the unique constraints in the database, you cannot add 1 person to a
-        class more than once. This is extremely important validation as it means we avoid double ups, however,
-        it would have been beneficial if I had a notification pop up which told the user that 'this person is
-        already in the class'. This would have enhanced the end-user considerations relevant implication and
-        would be something I would improve in the future.
+        class more than once. I added a FLASH error, which pops up and tell the user if the member is already
+        in the class. This is extremely important validation as it means we avoid double ups. It would have
+        been nice if a notification popped up when a member is added to the class. This would have enhanced
+        the visibility of system status and overall usability of my site, this would be something I would
+        improve in the future.
     </p>
     <video controls>
             <source src="assets/vids/ClassesTest.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    </video>
     <h3>Reflection</h3>
     <div class="row align-items-center">
         <div class="col-lg-6">
             <p>Overall, now that I have practice after the news section, I didn't encounter many issues when creating
                 the tables and inserting values into them. There was a moment when my unique constraint wasn't working,
                 but this was an error from my part where I accidentally inserted "Abhi Banaras Gharana" twice into the
-                registration page. It took a long time to figure out how to execute my ideas, as I had many components
+                registration table. It took a long time to figure out how to execute my ideas, as I had many components
                 to this database which I wanted to execute. For example, writing a query to join tables was initially
                 challenging, but I quickly understood how it works. Outputting the data and deleting members became
                 fairly intuitive as I used similar techniques in the News page, however, the most difficult part was
                 definitely the 'add member' option. Below we can see an unsuccessful test for adding members. This had
-                countless issues. From this test, I understood that I don't need a task for addimg members, as I am
+                countless issues. From this test, I understood that I don't need a task for adding members, as I am
                 directly posting this from a form which uses the 'POST' method. Nothing else in the classes section
                 uses the 'POST' method, therefore I realised I can just use the post method when adding members to
                 the registration table. I also realised that I need the 'GET' method to request the member data
@@ -520,7 +734,7 @@
     <br>
     <div class="row align-items-center">
         <div class="col-lg-6">
-            <p>In this first photo below, I was initally trying to start a session as soon as the person signs up.
+            <p>In this first photo below, I was initially trying to start a session as soon as the person signs up.
             However, in this test, I tried to set the authorisation in the session to a particular number
             before I inserted the form data and authorisation into the member page. This didn't work as the system didn't
             recognise 'age_group' and the authorisation number I set was not being inserted into the table. Overall, this
@@ -641,9 +855,13 @@
     <img class="img-fluid mx-auto d-block my-2" src="assets/images/WrongEmail.png">
     <br>
     <h3>Once the query was working and the session was created, I created a small banner with the details of
-        the user. This was a test to see if the session worked. Once this worked I got rid of it.
+        the user. This was a test to see if the session worked.
     </h3>
     <img class="img-fluid mx-auto d-block my-2" src="assets/images/LoginSession.png">
+    <br>
+    <h3>I later created a banner which displayed the user's name and age group (student/teacher).</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/SessionBanner.png">
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/SessionBanner2.png">
     <br>
     <h3>Logout Section for Sprint 5</h3>
     <p>Lastly, I created a very simple app.route / function to logout the user, all we need to do is clear the
@@ -693,35 +911,50 @@
         Your browser does not support the video tag.
     </video>
     <br>
-    <p>You saw in these tests that if the user isn't logged in or if they aren't a teacher, then the buttons
-    to add/delete/update news or to register for classes do not show up. Originally, I greyed-out / disbaled
-    the buttons instead. But I decided to get rid of this as it looked ugly.</p>
-    <img class="img-fluid mx-auto d-block my-2" src="assets/images/DisabledButton.png">
+    <h1>Sprint 6</h1>
+    <p>This was a very small sprint where I created a glossary by creating a glossary table in my database, and outputting its values
+        onto my glossary page (in a table). I didn't face many errors in this sprint.
+    </p>
+    <h3>Glossary Backlog</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/GlossaryBacklog.png">
+    <h3>Glossary page</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/GlossaryPage.png">
+    <h3>Glossary Code</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/GlossaryDataOutput.png">
     <br>
     <h3>Overall Reflection</h3>
     <p>
    In conclusion, I have included various tests and evidence which show how my program has gradually
     developed. Even though it was challenging at times, I managed to fix all the issues which occurred in
     my sprints and did a final video test run to show the functionality of program at the end of each
-    sprint. Throughout my program, I have included error messages, such as: for news I have an error page
-    which reads "do not know what to do with create, read, update on news (key not present)", similarly with
-    the login, an error message is printed if credentials are not recognised. For the signup page,
-    I also printed a flash error which tell the user if they already have an account. One thing which I was
-    not able to include was an option for the user to edit their details once they sign up. In my current design,
-    the user fills the form and once they submit the form, their details are inserted into the member table
-    straight away. They are not given the option to confirm, edit or delete their account / details. In the
-    future, I would definitely implement this in my design, as it gives the user the option to edit their details,
-    which Is very important. In this database, I created a glossary table which is outputted onto a glossary page,
-    this data doesn't need to be connected to any other table. However, if I had the time to develop this database
-    further, I would allow members to add words to the glossary, using a similar form to the news_cud form.
-    This form would ask for the word, meaning and pronunciation. I would also connect every Hindi/Sanskrit word
-    in the website to the glossary page so that people can click on the word and it takes them to the glossary
-    page. Perhaps, I could even connect this table to the news page, where every Hindi word in the News page is
-    connected to this tables. On my glossary page, I would also add a better layout to make the pronunciation
-    more readable.
+    sprint. In this database, I created a glossary table which is outputted onto a glossary page,
+    this data doesn't need to be connected to any other table. Some improvements that could have been made to the
+    website would be: allowing users to confirm/edit/delete their details once signing up, allow members to add
+    words to the glossary and more images. I was following Agile proccesses, which includes planning, testing and
+    reviewing each sprint, however, I don't think I did enough planning. I only made low-fidelity plans and banner sketches in the initial
+    stages of developing my website. This meant that if my client didn't like any changes I made, I didn't have any
+    fresh plans to base my new design off. This resulted in me spending many hours trialling various styles. In the future,
+    I would try to plan each sprint with pseudo code and low fidelity sketches. This way, I would waste time trialling styles
+    and code. One future aspiration is to connect every Hindi/Sanskrit word in the website to the glossary page so that people
+    can click on the word and it takes them to the glossary page (similar to Wikipedia). Another future aspiration
+    for my glossary page is to include videos or animations on how to pronounce certain words (as Hindi/Sanskrit
+    words are hard to pronounce). However, these elements weren't priorities therefore was unable to do them due to time constraints.
+    <br>
+    In terms of my digital outcome, it is functional and the front-end is aesthetically pleasing. However, throughout
+    my reflections I highlighted certain aspects which could be improved or aspects which were challenging. Firsty (as mentioned many times),
+    I found it very hard to find images for my website. This is mainly because I wanted my website to include South Asian Students wearing
+    traditional clothing (because it suits the aesthetics of my website). However, it was very hard to get these images as most dance students
+    show up to class in casual/western clothing (and Indian clothing takes a while to put on). For this reason, I did not have enough images.
+    This meant I had to resort to creating digital illustrations and implementing these throughout my website. In the
+    future, I would spend more time trying to organise 'photoshoots' with dance students. Along with this,
+    I couldn't include dance videos (requested by my client) due to time constraints, which means I didn't fully meet the end-user requirements. In the
+    future I would improve my organisational skills and dedicate more time towards this. One feature of my outcome, which was challenging was overlaying text
+    over the banners. This was challenging because, for my homepage banner, the text needed to be overlayed in the center. For the other pages, the text
+    needed to be aligned to the right. This meant that (in my layout page) I needed to have a separate banner area for the other banners. I'm not sure if
+    this was exactly the right approach as it was a little repetitive, however, it was functional.
     </p>
     <br>
-    <h1>Describing and Addressing Relevant Implications:</h1>
+    <h1>Describing and Addressing Relevant Implications for Database and Digital Outcome:</h1>
     <ul>
         <li><b>Privacy:</b></li>
         <p>Decribe: To ensure we are following the relevant implication of privacy,
@@ -730,7 +963,7 @@
             easily and directly accessible by the user, we can test this by seeing if http://127.0.0.1:8000/data
             takes us to the data folder. In addition to this, it is standard for passwords to be ‘hashed’,
             meaning that the password is converted into a series of letters and numbers using an encryption algorithm.
-            Lastly, we shouldn’t collect unnecessary data from the user
+            Lastly, we shouldn’t collect unnecessary data from the user.
         </p>
         <br>
         <p>Address: While constructing our database and integrating it into the website, I didn’t address privacy as
@@ -745,7 +978,21 @@
             class members, you must be an authorised member, which is a teacher. This is good because it means
             that not all users can view who is in each class. However, one issue is that anyone can sign-up and
             become a teacher. If this was a real dance class, I would put extra measures in place that require the
-            teacher to provide some form of identification that they are a dance teacher from this school  </p>
+            teacher to provide some form of identification that they are a dance teacher from this school.  </p>
+        </p>
+        <br>
+        <li><b>Intellectual Property:</b></li>
+        <p>Describe: Intellectual Property relates to 'who owns material'. When a website is created, all images in
+        the website should be owned by the developer (not stolen from the internet). In addition to this, the website
+        should have a protected IP, and all the images on this website should be protected.</p>
+        <br>
+        <p>Address: In all honesty, I didn't protect my IP address and the images on my website very much. I was
+            able to get my website live, but I wasn't very sure how to 'secure' this website to make sure it's
+            not easily stolen. In addition to this, my github repository for this page is public, therefore, anyone
+            could perhaps view my code and copy it; as I do not have any legal documents to protect my material. In
+            terms of images, I made sure all images were owned by me, or I took the permission of the person I was
+            taking the image from. When I didn't have enough images, instead of taking them from the internet, I made
+            digital illustration. This was to ensure all the intellectual property was owned by me.
         </p>
         <br>
         <li><b>Functionality:</b></li>
@@ -775,7 +1022,77 @@
             them. I have also made as many data fields as I can unique and not null, this means that the database
             is ‘self-validated’, as it is able to spot when a unique constraint is failed (e.g repeated entries),
             or missed fields. If I require items from my member table in other parts of the database (e.g a member
-            name posted with a news item), I link them through foreign keys.</p>
+            name posted with a news item), I link them through foreign keys. Lastly, Bootstrap has built-in validation,
+            such as not allowing empty fields in forms. Bootstrap also allows the developer to write the specific type
+            of data being requested in form questions (e.g email), therefore, if the user enters an email address which
+            doesn't follow the typical format for emails, bootstrap will ot allow the user to submit the form until a
+            valid email is entered.
+        </p>
+        <br>
+        <li><b>Accessibility/Usability</b></li>
+        <p>Describe: For a website to be usable it should show when an error
+        has occurred (visibility of system status) and allow users to correct it
+        and it should use recognised conventions (match between system and real world).
+        An Accessible website should cater to everyone's needs, e.g dyslexic, colourblind
+        people. The website should also be viewable on different devices or with different screen
+        sizes. </p>
+        <br>
+        <p>Address: Throughout my program, I have included error messages, such as: for news I have an error page
+        which reads "do not know what to do with create, read, update on news (key not present)", similarly with
+        the login, an error message is printed if credentials are not recognised. For the signup page,
+        I also printed a flash error which tell the user if they already have an account. For the classes page,
+        I included a flash error which tells the user if a student is already in the class. Lastly, for the news page
+        I included a flash error, which tell the user if the news they are adding already exists. When the error is presented,
+        the user has been redirected to the page where they need to correct the error. For example, on the signup page, if
+        the user already has an account it redirects them to the login page and shows the FLASH error message "looks like you already
+        have an account". The usability of this site would have been improved if I added a confirmation message when a student is
+        added to a class (for visibility of system status). One thing which I was not able to include was an option for the user
+        to edit their details once they sign up. In my current design, the user fills the form and once they submit the form,
+        their details are inserted into the member table straight away. They are not given the option to confirm, edit or delete
+        their account; they can only logout. In the future, I would definitely implement this in my design, as currently, the user
+        is 'trapped' in the Kala dance online community once they sign up.
+         </p>
+        <h4>Images of error pages and Flash errors</h4>
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsFlashError.png">
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/Flash.png">
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/AlreadyInClassFlash.png">
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/ClassesError.png">
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/NewsErrorPage.png">
+        <br>
+         <p>
+        In terms of functionality I used contrasting colours and tested this with various colour blind filters.
+         In general and with various filters, the Hindi text on my banner is slightly hard to read, as it is small
+         & clashes with some of the gold colours in the banner. However, this text is mainly decorative as most of
+         my user's can't read Hindi. Desppite this, in the future I would perhaps make the Hindi text bigger or use
+         a brighter beige colour to make it more visible. One positive is that the English translation for this quote
+         is extremely visible as the text is maroon and the background is beige.
+         Another way in which I considered accessibility is by considering my dyslexic user. I made sure to regulary
+         review my sprints with her to make sure that the layout of my pages wasn't too overwhelming. I also did research
+         and used Open Sans font on my website, as it's a readible font for those with dyslexia; because it doesn't have any 'fancy curves',
+         the letters are well spaced out and bold. I also made sure NOT to use italics, as this can make it hard for
+         dyslexic students to read. Lastly, I considered the my website on different screen sizes. I made sure to use
+         @media queries to adjust elements in my code based on different screen sizes. This was helpful, as I made sure
+         that everything in my website resized until the smallest screen size. But I still faced some issues, as when
+         the page size reduced, the banner in all my pages often becomes much smaller than the images on the page (even
+         carousel images), therefore this makes the page look un-proportional. When I tested my website on my phone,
+         there we also a few pages in which the text was 'overflowing' from the banners. On some of the other pages,
+         the banner was cut-off slightly. In addition to this, the banner was very small compared to images in the
+        website (similar to small screen size on laptop). Other than this, the website was functional on the mobile
+         phone and all the text was readable. In the future, I would consider a 'mobile first' technique, where you
+         test the website on a mobile phone before testing it on a laptop.
+        </p>
+        <h4>Here we can see a video for the color-blind tests</h4>
+        <video controls>
+        <source src="assets/vids/ColourBlindTest.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <br>
+        <h4>Here you can see the test for different screen sizes on my laptop</h4>
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/DifferentScreens.png">
+        <br>
+        <h4>This is the test for a mobile phone screen. On the home page the header text 'overflowed' from the banner, and text is
+            'overflowing' from the circular buttons. On the other pages, the top of the banner was cut-off, so we couldn't see the full illustration</h4>
+        <img class="img-fluid mx-auto d-block my-2" src="assets/images/MobileTest.png">
         <br>
         <li><b>Sustainability and Future Proofing:</b></li>
         <p>Describe: Sustainability and Future-proofing means the database should be able to be updated and
@@ -794,7 +1111,37 @@
             association table, registration. This also meant that any changes I made to the data values in my
             table, were automatically changed in the other tables. We saw an example of this when I changed
             ‘student’ in my member table to ‘junior student’ or ‘senior student’. Due to the SQL installer
-            file, I can also confidently add new tables and link these to existing tables.
+            file, it also makes it easy for anyone in the future to make changes to elements in the database
+            as all the data-tables are in one area and are connected. This means new variables, new tables and
+            new values can easily be added to the database. This website allows for change, as authorised users
+            can add/update/delete news and add/delete class members. This means that the website is sustainable
+            and future-proofed for users. One area which could have been improved was the glossary. Although
+            changes can be made to the glossary table in the SQL file, changes cannot be made by the user. The
+            glossary page is presented as a static page (despite the values being in the database). This means
+            if the website is updated and new Hindi/Sanskrit words are added on other pages, the user can't add
+            these words to the glossary. In the future, I would allow authorised users to add new words through
+            a form on the website.
+        </p>
+        <br>
+        <li><b>Aesthetics:</b></li>
+        <p>Describe: For a website to be aesthetic, it must have minimalistic design features (e.g minimal colour pallet) and
+            a match between the system and real world.
+        </p>
+        <br>
+        <p>Address: In my website, I kept my colour scheme to a minimum of maroon, beige and a little bit of red. This ensured
+            that my website wasn't too overwhelming to look at and was cohesive. I also used conventions that match between the
+            'real world'/modern websites. For example, my navigation was at the top of the page, with the login/signup/logout
+            button in the top right corner. The 'match between system and real world' makes the website easy to navigate and
+            not overwhelming for the user (as this is a convention commonly used in other websites). I also included some of my
+            own design features, for example on my website 'interactve features' (e.g forms, news items, classes, class members)
+            have round containers, whereas I chose for 'static' pages to have non-rounded containers. This made it easier to
+            distinguish between interactive pages and non-interactive pages. Lastly, (because I didn't have enough images),
+            I made digital illustration. These illustration were aesthetic as they were minimalistic (not much detail such
+            shading), and they followed my maroon and beige colour scheme. One downside was that they were used quite frequently
+            in my website (in the banners, in the circular image-buttons, and in the class page). Because of this, it may cause
+            my website to be less visually interesting. In the future I would dedicate more time for finding images, as this
+            would ensure variety in my website.
+
         </p>
         <br>
         <li><b>End-user considerations:</b></li>
@@ -802,97 +1149,86 @@
             user's needs; for example, we could make sure that it appeals to the right demographic. It should
             be presented so that it ‘matches the real world’ in terms of the user’s expectations for a modern
             website. We can do this by presenting data in a clear organised structure. Along with this, forms
-            should allow the users to add entries and update or delete existing entries in the database.</p>
+            should allow the users to add entries and update or delete existing entries in the database. For
+            the digital outcome, it should include features that follow the client's requirements and that
+            consider the main stakeholders/end-users.
+        </p>
         <br>
-        <p>Address: In my database design, end-user considerations are evident in the news and registration page.
-            On the news page, users can add new entries and delete or update existing news. Even with the registration
-            section, users can add members to a class and also have the ability to delete these members. The only thing
-            I didn’t consider was the signup page, in this page I allow the users to submit the form to signup to the
-            website, however, I do not give them the option to confirm their details or edit their details. Before
-            implementing my database into the signup page, I had a confirm page. I still have this confirm page in my
-            templates, but it is not connected to the database. This is something. If I were to repeat this process,
-            I would have given the user the option to edit their details, and THEN their details are added to the
-            member page.</p>
+        <p>Address: In my database design, end-user considerations are evident in the news, classes and registration page.
+            On my website, all the data information is outputted in a tidy manner; such as each individual news item, classes
+            and class members being 'wrapped' in their own container. Users are able to update news and classes in a way
+            that aligns with the ‘the real world’ and modern websites as they use simple forms. This makes it easy for
+            users to understand what to do on each page.  On my news page, as soon as the change has been made (in the news_cud
+            form), it redirects to the news page, where we can see immediate confirmation that our action has occurred. The
+            same applies for registration, where the user can immediately see if they have added or deleted a user, as both these actions
+            occur on the registration page. However, one way I could improve the registration page in the future is by
+            giving the user conformation of a student being added to a class. For my signup and login form, the user
+            receives an error message that clearly communicates the reason why the action has failed, e.g. credentials
+            not recognised for the login page, and 'looks like you already have an account' for the signup page. For my
+            classes page, I do have an Flash error for when the user tries to add a member who is
+            already in the class. </p>
         <br>
-        <p>In terms of the News, Classes and Registration page, all the data information is managed through a
-            website. My news and class data are presented in an accessible way as its design matches between
-            ‘the real world’ and modern websites, making it easy for users to understand what to do on each
-            page. E.g that to add news they need to fill a form or that they need to go to the registration
-            page to add or delete members. On my news page, as soon as the change has been made (in the
-            news_cud form), it redirects to the news page, where we can see immediate confirmation that our
-            action has occurred. The same applies for registration, where the user can immediately see if they
-            have added or deleted a user, as both these actions occur on the registration page and we are
-            redirected towards the registration page once the change has occurred. For my signup and login form,
-            the user receives an error message that clearly communicates the reason why the action has failed,
-            e.g. credentials not recognised for the login page, and 'looks like you already have an account' for
-            the signup page. For my classes page, I do not have an error message / notification for when the
-            user tries to add a member who is already in the class. In the future, I would add a message "This
-            person is already in the class", so I that I improve the visibility of system status. </p>
-        <br>
-        <p>One way I address end-user considerations is by considering my stakeholders. Throughout my website,
-            my data (such as news, classes, etc.) has been considerate of Indian culture, by using the correct
-            words used in Kathak dance, such as Gharana, Tukda, Tatkaar, etc.. I have also considered the
-            non-Indian population or those who don't understand Hindi terms and dance terms by implementing a
-            glossary. This glossary is in my database and allows those who don't understand certain terms to
-            learn the meaning and pronunciation. </p>
+        <p>One way I address end-user considerations is by considering my stakeholders. By following UX design principles,
+            I was able to identify my stakeholder and identify their needs. My stakeholders are Indian
+            dance students (who are the most common members of this dance class). Throughout my website and
+            my data (such as news, classes, etc.), I have been considerate of Indian culture, by using the correct
+            words used in Kathak dance, such as Gharana, Tukda, Tatkaar, etc. I made sure not to use English translation
+            of theres words in my website, as I didn't want Indian students to feel that their culture/language has been
+            adapted to cater to a non-Indian audience. I have also considered the non-Indian population or those who don't
+            understand Hindi terms and dance terms by implementing a glossary. This glossary is in my database and allows
+            those who don't understand certain terms to learn the meaning and pronunciation. Along with this, I chose to
+            only use images of South-Asian dancers. This is because, although Usha's class is diverse, I wanted South Asian
+            students to feel represented within their own culture. One way I didn't fully meet end-user requirements is by
+            not including dance videos which were requested by my client. Due to time constraints, I wasn't able to create
+            videos of basic Kathak dance steps, which meant I didn't meet this requirement.
+        </p>
         <br>
     </ul>
+
+<h2>Finalising and Testing</h2>
+    <p>After all these test, I tried to minimize my errors a much as possble, such as reducing the length of ALT tags.
+    I also fixed structural issues (e.g h1 header followed by h3 header), by chaning the order of headers. Lastly, there
+    were some errors (e.g contrast errors), which I couldn't change as i would need to change my colour scheme for that.
+    However, the contrast test shows that, to make my website more accessable, I could have use more contrasting colours.
+    The empty button error seemed to be related to the hamburger symbol, therefore this was a error I couldn't fix</p>
+    <br>
+    <h3>Accessibilty Test (Waves)</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/WavesTest.png">
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/WavesStructuralIssue.png">
+        </div>
+        <div class="col-lg-6">
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/WavesStructuralIssue2.png">
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/AltText.png">
+        </div>
+        <div class="col-lg-6">
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/ConstrastIssue.png">
+        </div>
+    </div>
+    <br>
+    <hr>
+    <h3>Pingdom Test</h3>
+    <img class="img-fluid mx-auto d-block my-2" src="assets/images/PingdomSpeedtest.png">
+    <br>
+    <hr>
+    <h3>HTML Validator Test</h3>
+    <p>Here are my errors before and after I fixed them (as much as I could)</p>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/ValidatorError.png">
+        </div>
+        <div class="col-lg-6">
+            <img class="img-fluid mx-auto d-block my-2" src="assets/images/W3validatorissuesfixed.png">
+        </div>
+    </div>
 
 </div>
 
 
-<br>
-<h3>Some SQL</h3>
-<pre style="font-size: 1em;"><code class="SQL">SELECT track_name as "Tracks",
-album_name as "Album", album_artist as "Artist" --Interesting comment
-FROM music_table
-WHERE track_name like "R%";</code></pre>
-<h3>Some Python</h3>
-<pre style="font-size: 1em;"><code class="Python"># interesting comment
-def review_fruit(l):
-    for x in l:
-        output = "{:&le; 10} -- {: &gt;4}".format(x[0], x[1])
-        print(output)
-    return None</code></pre>
-    <h3>Some CSS</h3>
-<pre style="font-size: 1em;">
-<code class="css">/* interesting comment */
-:root{
---base-back: rgb(150,150,150);
---black: rgb(0,0,0);
-}
-body{
-margin: 0;
-padding: 0;
-font-size: 100%;
-}</code></pre>
-<h3>Some HTML</h3>
-<!-- to present html code on an html coded web page raises an interesting problem -->
-<!-- the code needs to be converted into "escape" characters to handle the < and > -->
-<!-- there are online tools to do it https://codebeautify.org/html-escape-unescape -->
-<pre style="font-size: 1em;">
-<code class="html">&lt;!-- interesting comment --&gt;
-&lt;li class=&quot;list-group-item d-flex justify-content-between align-items-start&quot;&gt;
-&lt;div class=&quot;ms-2 me-auto&quot;&gt;
-    &lt;div class=&quot;fw-bold&quot;&gt;Subheading&lt;/div&gt;
-    Content for list item
-&lt;/div&gt;
-&lt;span class=&quot;badge bg-primary rounded-pill&quot;&gt;14&lt;/span&gt;
-&lt;/li&gt;
-</code>
-</pre>
-    <h3>Some Javascript (most likely will not need)</h3>
-<pre style="font-size: 1em;">
-<code class="javscript">function inBoundsCheck(xM, yM, x, y, w, h){
-    if( xM > x && xM < x+w && yM > y && yM < y+h){
-    // interesting comment
-        return true;
-    }else{
-        return false;
-    }
-}</code>
-</pre>
-
-
-<footer> Your name </footer>
+<footer> Arushi Bhatnagar Stewart</footer>
 </html>

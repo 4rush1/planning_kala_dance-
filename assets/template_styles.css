@@ -45,15 +45,6 @@ footer{
     color: white;
 }
 
-
-.row{
-    background-color: var(--base-back);
-}
-
-
-
-
-
 video{
     max-height: 300px;
     display: block;
